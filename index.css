@@ -1,6 +1,6 @@
 @font-face {
     font-family: main;
-    src: url(/fonts/Heavitas.ttf);
+    src: url(Heavitas.ttf);
 }
 *{
     margin: 0;
