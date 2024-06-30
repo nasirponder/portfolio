@@ -1,0 +1,78 @@
+@font-face {
+    font-family: main;
+    src: url(/fonts/Heavitas.ttf);
+}
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-image: repeating-linear-gradient(0deg, rgb(41, 41, 41) 0px, rgb(41, 41, 41) 1px,transparent 1px, transparent 21px),repeating-linear-gradient(90deg, rgb(41, 41, 41) 0px, rgb(41, 41, 41) 1px,transparent 1px, transparent 21px),linear-gradient(90deg, hsl(87,0%,9%),hsl(87,0%,9%));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+footer{
+    color:white;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom:0em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: main;
+    font-size: 12px;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+nav {
+    font-family: main;
+    text-transform: uppercase;
+    display: flex;
+    width: 90%;
+    margin: 50px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .left .name{
+    font-size: 30px;
+} 
+nav .left .name a:hover{
+    color:rgb(255, 255, 0);
+    transition: 1s;
+}
+nav .right .links a{
+    margin: auto 15px;
+    font-size: 17px;
+    
+}
+nav .right .links a:hover{
+    color:orange;
+    transition: .5s;
+}
+nav .right .links img{
+    width:50px;
+    position: absolute;
+    top:2.35em;
+    right:5%;
+    display: none;
+    cursor: pointer;
+} 
+@media (max-width:1000px) {
+    nav .right .links a{
+        display: none;
+    }
+    nav .right .links img{
+        display: flex;
+    }
+}
+h1{
+    text-align: center;
+    color: yellow;
+    font-family: main;
+    margin: 250px auto;
+}
